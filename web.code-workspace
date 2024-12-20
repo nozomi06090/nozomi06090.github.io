@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "web",
+			"path": ".."
+		},
+		{
+			"name": "ig-flex",
+			"path": "C:/Users/M307/Desktop/ig-flex"
+		},
+		{
+			"name": "flex",
+			"path": "C:/Users/M307/Downloads/flex/flex"
+		},
+		{
+			"name": "flex",
+			"path": "../../flex"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "flex"
+	}
+}
