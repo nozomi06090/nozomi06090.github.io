@@ -1,0 +1,111 @@
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.myphoto {
+    width: 160px;
+    border-radius: 9999px;
+}
+.myphoto:hover{
+    animation-name: rubberBand;
+    animation-duration: .5s;
+}
+.photo {
+    text-align: center;
+}
+.name {
+    text-align: center;
+}
+h1 {
+    font-family: sans-serif;
+    color: #ffde59;
+    font-size: 28px;
+}
+.info {
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.button {
+    position: relative;
+    display: block;
+    border: 1px solid #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 60px;
+}
+.top {
+    display: block;
+    /* 變區塊 */
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* 變圓形 */
+    background-color: #fff;
+    text-align: center;
+    padding-top: 16px;
+    box-sizing: border-box;
+    /* 把padding、border的尺寸含入高度、寬度內 */
+}
+.works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition-property: transform;
+    transition-duration: .5s;
+}
+.work-item {
+    position: relative;
+    line-height: 0;
+    overflow: hidden;
+}
+.work-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align:  center;
+    color: #000000;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    opacity: 0;
+    transition: .5s;
+}
+.work-item:hover .work-title {
+    opacity: 1;
+}
+.work-item:hover img {
+    transform: scale(1.5);
+    filter:blur(5px)
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
